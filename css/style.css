@@ -91,7 +91,7 @@ body {
 }
 
 .header-fixed .header-limiter nav a{
-	display: inline-block;
+	/* display: inline-block; */
 	padding: 0 5px;
 	text-decoration:none;
 	color: #ffffff;
