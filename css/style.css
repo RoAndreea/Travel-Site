@@ -181,7 +181,8 @@ body.fixed .header-fixed .header-limiter nav {
  .slideshow-container {
    max-width: 1000px;
    position: relative;
-   margin: 30px auto;
+   margin: 60px auto;
+   
  }
  
  /* Hide the images by default */
@@ -274,9 +275,10 @@ body.fixed .header-fixed .header-limiter nav {
 	display: block;
 	border-radius: 40%;
 	max-width: 400px;
-	
+	margin-top: 40px;
     margin-left: auto;
-    margin-right: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
 }
 
 .paragraf {
@@ -334,4 +336,82 @@ body.fixed .header-fixed .header-limiter nav {
 	width: 55%;
 	background: rgba(0,0,0,0.85);
 	margin: 0 auto;
+}
+
+
+
+
+
+
+.story-element {
+    display: flex;
+    margin: 0px;
+    justify-content: space-between;
+	flex-wrap: wrap;	
+}
+
+.story-element:first-child {
+    margin-top: 72px;
+}
+
+.story-element:nth-child(2n) {
+    flex-direction: row-reverse;
+}
+
+.story-element::after {
+    margin: 48px 0px;
+    content: "";
+    background-image: url("divider.png");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    height: 24px;
+    width: 100%;
+}
+
+.story-element:last-child::after {
+    /* background-image: none; */
+    display: none;
+}
+
+
+.story-element__image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    width: 45%;
+    vertical-align: middle;
+    
+}
+
+.story-element__image img{
+    object-fit: cover;
+	max-height: 270px;
+	max-width: 450px;
+	border-radius: 20%;
+}
+
+.story-element__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px;
+	 width: 45%; 
+	 font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.story-element__text h4 {
+    padding: 8px 8px 0px 8px;
+}
+
+.story-element__text p {
+    padding: 0px 8px 8px 8px;
+}
+
+section {
+    max-width: 1000px;
+    margin: 0 auto;
 }
