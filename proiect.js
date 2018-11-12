@@ -1,7 +1,23 @@
-	var slideIndex = 1;
+var slideIndex = 1;
 window.onload = function(){
 //	var slideIndex = n;
-showSlides(slideIndex); }
+showSlides(slideIndex); 
+//instantiere ReviewSection
+reviewSection = new ReviewSection();
+
+//update reviews based on data, regardless of html
+// DEPRECATED | used just as a seed for initial data
+reviewSection.updateReviewSection();
+
+//adaugare listener on form submit
+document.getElementById("review-form").addEventListener("submit", (event) => {
+    event.preventDefault();
+    let nameValue = document.getElementById("review-form__name").value;
+    let textValue = document.getElementById("review-form__text").value;
+    reviewSection.addReview(new Review(nameValue, textValue));
+    document.getElementById("review-form__name").value = "";
+    document.getElementById("review-form__text").value = "";
+});}
 
 // Next/previous controls
 function plusSlides(n) {
@@ -28,4 +44,6 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block"; 
   dots[slideIndex-1].className += " active";
 }
+
+
 

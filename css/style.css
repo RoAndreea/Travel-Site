@@ -415,3 +415,93 @@ section {
     max-width: 1000px;
     margin: 0 auto;
 }
+
+
+
+
+
+
+/* Review form */
+.review-form {
+    display: flex;
+	margin-left: 175px;
+	margin-top: 20px;
+	margin-right:auto;
+    padding-left: 2em;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.review-form h2 {
+	width: 100%;
+	font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.review-form__text {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px;
+	width: 45%; 
+	font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.review-form__form {
+    font-size: 1em;
+    display: flex;
+	width: 30%;
+	
+}
+
+.review-form__form input[type="submit"] {
+	display: block;
+}
+
+/* Review themselves */
+.reviews {
+    display: flex;
+    margin-left: 200px;
+	margin-top: 20px;
+	margin-right:auto
+    padding-left: 2em;
+	flex-direction: column;
+	font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	
+}
+
+.review {
+    margin: 0px 12px 12px 12px;
+	transition: opacity 2s;
+	
+}
+
+.review__name {
+	font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.img-levitatie{	
+		display: block;
+		max-width: -110px;
+		max-height: 0px;	 
+ 		margin-left: auto;
+		margin-right: auto;	
+		
+}
+
+ .img-levitatie2{	
+	display: block;
+		max-width: 150px;
+		max-height: 0px;
+ 		margin-left: 67%;
+		margin-right: auto;	
+		margin-top: 20px;
+} 
+
+.subscription :hover & {
+	transform: scale(2);
+	transition: all 300ms;
+}
