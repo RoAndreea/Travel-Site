@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="./css/style.css">
+<script src="js.js"></script>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sugestiile tale</title>
+	
+</head>
+
+<body>
+<header class="header-fixed">
+		<div class="header-limiter">	  
+		  <h1>
+			<a href="proiect.html">Zen
+			  <span>Travel</span>
+			</a>
+		  </h1>
+		  <nav>
+			<a href="proiect.html">Pagina principala</a>
+			<div class="dropdown">
+				<button class="dropbtn">Vacante</button>
+				<div class="dropdown-content">
+                        <a href="city.html">CityBreak-uri</a>
+                        <a href="sejours.html">Sejururi</a>
+				</div>
+			</div>		
+            <a href="sugestii.html">Sugestiile tale</a>
+            <a href="about.html">Despre noi</a>
+		  </nav>
+		</div>
+      </header>
+      
+
+<!-- You need this element to prevent the content of the page from jumping up -->
+<div class="header-fixed-placeholder"></div>
+<!-- The content of your page would go here. -->
+
+ <!-- <div class="img-levitatie">
+    <img src="./images/calator.png">
+</div>  -->
+
+ <div class="img-levitatie2">
+        <img src="./images/bag.png">
+</div> 
+    
+
+<section class="review-form">
+    <!-- <form>
+        Name: <input type="text" name="form-name"> <br />
+        Review: <input type="text" name="form-text"> <br />
+        <input type="submit" value="Submit">
+    </form> -->
+    <h2>Recomanda-ne o destinatie pe care ai vizitat-o!</h2>
+    <div class="review-form__text">
+        Name: <br>
+        <br>
+        Locuri ce merita vizitate, lucruri de facut, restaurante sau evenimente <br>
+    </div>
+    <div class="review-form__form">
+        <form id="review-form">
+            <input id="review-form__name" type="text" name="form-name" required=""><br>
+            <!-- <input type="text" name="form-text"> -->
+            <textarea id="review-form__text" rows="4" name="form-text" required=""></textarea>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+</section>
+
+<section class="reviews" id="reviews"><h2>Sugestiile voastre</h2>
+    <article class="review"><div class="review__name">Nume: David</div><div class="review__text">Londra este o destinatie de vis. Sunt multe locuri de vizitat: Big Ben, Acvariul Londrei, Temnitele Londrei, London Eye, Magazinul M&Ms, Muzeul Britanic!</div></article>
+</section>
+
+
+
+<div class="subscription">
+    <div class="box">
+            <div class="img-subscription">
+            <img src="./images/insta.png" alt=instagram style="width:12%">
+            </div>
+            <p class="text-frum">Urmareste-ne pe Instagram </p>
+    </div>
+    <div class="box">
+            <div class="img-subscription">
+            <img src="./images/fb.png" alt=facebook style="width:7%">
+            </div>
+            <p class="text-frum">Urmareste-ne pe Facebook </p>
+    </div>
+</div>   
+
+
+<footer>
+<p>ZenTravel, Copyright &copy;2018</p>
+</footer>
+
+
+
+</body>
