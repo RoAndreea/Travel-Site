@@ -87,9 +87,24 @@ window.onload = () => {
 }
 
 
+
+function myFunction2() {
+    setTimeout(myFunction, 500);
+    setInterval(myFunction3, 10000);
+  }
+
+ 
+
 function myFunction() {
     document.getElementById("copen").style.color = "#c4181b";
     document.getElementById("berlin").style.color = "#6e4ec7";
     document.getElementById("bruxel").style.color = "#24ccbe";
     document.getElementById("ist").style.color = "#30945b";
   }
+
+function myFunction3() {
+    document.getElementById("copen").style.color = "black";
+    document.getElementById("berlin").style.color = "black";
+    document.getElementById("bruxel").style.color = "black";
+    document.getElementById("ist").style.color = "black";
+}
