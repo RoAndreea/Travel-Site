@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <link rel="stylesheet" href="./css/style.css">
-<script src="proiect.js"></script>
+<script src="js.js"></script>
 
 <head>
 	<meta charset="utf-8">
@@ -33,19 +33,21 @@
 			
 		  </nav>
 		</div>
-      </header>
+</header>
       
 
 <!-- You need this element to prevent the content of the page from jumping up -->
 <div class="header-fixed-placeholder"></div>
 <!-- The content of your page would go here. -->
 
+
+
 <section class="stories">
 		<div class="story-element">
 				<div class="story-element__image">
-						<img src="./images/copenhagen.jpg">
+						<img src="./images/copen.jpg">
 				</div>
-				<div class="story-element__text">
+				<div class="story-element__text"  id="copen">
 						<article>
 								<h4>
 										Copenhaga
@@ -53,6 +55,7 @@
 								<p>
 										Copenhaga este un oraș care trebuie să treacă imediat pe lista city break-urilor tale. Pe de-o parte, pare să fi fost proiectat de Hans Christian Andersen, renumitul scriitor de povești care a locuit în capitala daneză. Pe de altă parte, clădirile moderne și minimaliste îți amintesc imediat că ești în Scandinavia. Canale, bărci, castele, parcuri de distracții vechi, zone verzi și multă relaxare. Nimeni nu pare să se grăbească în Copenhaga și nimeni nu petrece prea mult timp în trafic. De aceea, pe lângă atracțiile turistice numeroase, cu siguranță îți va plăcea să vezi stilul de viață al nordicilor. Atractiile principale: Portul Nyhavn, Statuia Mica Sirena, Cartierul Christiania, Strada Strøget, Gradina Botanica.
 								</p>
+								
 						</article>
 				</div>
 		</div>
@@ -61,7 +64,7 @@
 				<div class="story-element__image">
 						<img src="./images/berlin.jpg">
 				</div>
-				<div class="story-element__text">
+				<div class="story-element__text" id="berlin">
 						<article>
 								<h4>
 										Berlin
@@ -77,7 +80,7 @@
 				<div class="story-element__image">
 						<img src="./images/bruxel.jpg">
 				</div>
-				<div class="story-element__text">
+				<div class="story-element__text" id="bruxel">
 						<article>
 								<h4>
 										Bruxelles
@@ -91,9 +94,9 @@
 
 		<div class="story-element">
 				<div class="story-element__image">
-						<img src="./images/istanbul.jpg">
+						<img src="./images/istanbul.jpg" >
 				</div>
-				<div class="story-element__text">
+				<div class="story-element__text" id="ist">
 						<article>
 								<h4>
 										Istanbul
@@ -104,7 +107,12 @@
 						</article>
 				</div>
 		</div>
+		
 </section>
+
+<div class="buton-js">
+		<button type="button" onclick="myFunction()">Color your journey!</button>
+</div>
 
  <!-- subscription bar -->
  <div class="subscription">

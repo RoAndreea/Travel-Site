@@ -304,7 +304,12 @@ body.fixed .header-fixed .header-limiter nav {
 
 .box{
    display: inline-block;
+   transition: transform .2s;
 }
+
+.box:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
 
 .img-subscription{
 	margin-left: 45px;
@@ -504,4 +509,9 @@ section {
 .subscription :hover & {
 	transform: scale(2);
 	transition: all 300ms;
+}
+
+.buton-js{
+	margin-top: 2%;
+	margin-left: 47%;
 }

@@ -85,3 +85,11 @@ window.onload = () => {
         document.getElementById("review-form__text").value = "";
     });
 }
+
+
+function myFunction() {
+    document.getElementById("copen").style.color = "#c4181b";
+    document.getElementById("berlin").style.color = "#6e4ec7";
+    document.getElementById("bruxel").style.color = "#24ccbe";
+    document.getElementById("ist").style.color = "#30945b";
+  }
