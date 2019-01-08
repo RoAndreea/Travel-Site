@@ -1,3 +1,102 @@
+@media screen and (max-width: 600px){
+	.nav {
+		display: flex;
+		flex-direction: column;
+		display: block;
+	} 
+	.story-element {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.story-element__image {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	.story-element__image img {
+		width: calc(100% - 10px);
+	}
+	
+	.img-about-us {
+		width: calc(100% - 30px);
+	}
+
+	.header-fixed {
+		padding: 20px 0;
+		height: 150px;
+	}
+
+	.header-fixed .header-limiter h1 {
+		float: none;
+		margin: -8px 0 10px;
+		text-align: center;
+		font-size: 24px;
+		line-height: 1;
+	}
+
+	.header-fixed .header-limiter nav {
+		line-height: 1;
+		float:none;
+	}
+
+	.header-fixed .header-limiter nav a {
+		font-size: 13px;
+	}
+
+	body.fixed .header-fixed {
+		display: none;
+	}
+
+	.a{
+		display:block;
+	}
+	.dropdown-content a{
+		margin-top: 15px;
+		margin-bottom: 10px;
+	}
+}
+
+@media all and (min-width: 600px) and (max-width: 900px) {
+
+	.header-fixed {
+		padding: 20px 0;
+		height: 150px;
+	}
+
+	.header-fixed .header-limiter h1 {
+		float: none;
+		margin: -8px 0 10px;
+		text-align: center;
+		font-size: 24px;
+		line-height: 1;
+	}
+
+	.header-fixed .header-limiter nav {
+		line-height: 1;
+		float:none;
+	}
+
+	.header-fixed .header-limiter nav a {
+		font-size: 13px;
+	}
+
+	body.fixed .header-fixed {
+		display: none;
+	}
+
+	.a{
+		display:block;
+	}
+	.dropdown-content a{
+		margin-top: 15px;
+		margin-bottom: 10px;
+	}
+
+
+}
+
 
 body {
 	background-color: #ccc;
@@ -137,35 +236,7 @@ body.fixed .header-fixed .header-limiter nav {
 
 /* Making the header responsive */
 
-@media all and (max-width: 600px) {
 
-	.header-fixed {
-		padding: 20px 0;
-		height: 75px;
-	}
-
-	.header-fixed .header-limiter h1 {
-		float: none;
-		margin: -8px 0 10px;
-		text-align: center;
-		font-size: 24px;
-		line-height: 1;
-	}
-
-	.header-fixed .header-limiter nav {
-		line-height: 1;
-		float:none;
-	}
-
-	.header-fixed .header-limiter nav a {
-		font-size: 13px;
-	}
-
-	body.fixed .header-fixed {
-		display: none;
-	}
-
-}
 
 /*
 	 We are clearing the body's margin and padding, so that the header fits properly.
@@ -295,7 +366,7 @@ body.fixed .header-fixed .header-limiter nav {
 
 
 .subscription{
-	position: center;
+	/* position: center; */
 	margin-left: 37%;
 	padding-top:60px;
 	
@@ -333,7 +404,7 @@ body.fixed .header-fixed .header-limiter nav {
 .text-frum
 {
 	float: left;
-	font:  Arial, Helvetica, sans-serif;
+	/* font:  Arial, Helvetica, sans-serif; */
 	font-weight: bold;
 }
 
@@ -359,9 +430,9 @@ body.fixed .header-fixed .header-limiter nav {
     margin-top: 72px;
 }
 
-.story-element:nth-child(2n) {
+/* .story-element:nth-child(2n) {
     flex-direction: row-reverse;
-}
+} */
 
 .story-element::after {
     margin: 48px 0px;
@@ -429,10 +500,10 @@ section {
 /* Review form */
 .review-form {
     display: flex;
-	margin-left: 175px;
+	/* margin-left: 175px; */
 	margin-top: 20px;
 	margin-right:auto;
-    padding-left: 2em;
+    /* padding-left: 2em; */
     justify-content: flex-start;
     flex-wrap: wrap;
 }
@@ -467,10 +538,10 @@ section {
 /* Review themselves */
 .reviews {
     display: flex;
-    margin-left: 200px;
+    /* margin-left: 200px; */
 	margin-top: 20px;
-	margin-right:auto
-    padding-left: 2em;
+	margin-right:auto;
+    /* padding-left: 2em; */
 	flex-direction: column;
 	font-size: 18px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -490,7 +561,7 @@ section {
 
 .img-levitatie{	
 		display: block;
-		max-width: -110px;
+		/* max-width: -110px; */
 		max-height: 0px;	 
  		margin-left: auto;
 		margin-right: auto;	
@@ -506,12 +577,19 @@ section {
 		margin-top: 20px;
 } 
 
-.subscription :hover & {
+/* .subscription :hover & {
 	transform: scale(2);
 	transition: all 300ms;
-}
+} */
 
 .buton-js{
 	margin-top: 2%;
 	margin-left: 47%;
+}
+
+.sub{
+	display: inline-block;
+    margin-left: 6%;
+    margin-bottom: 110px;
+}
 }
